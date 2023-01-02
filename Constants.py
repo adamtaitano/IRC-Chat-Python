@@ -1,0 +1,11 @@
+BUFF_SIZE = 512
+crlf = "\r\n"
+HOST = '127.0.0.1'
+PORT = 6667
+MOTD = "Welcome to the {}:{} IRC Server! \nType 'STATS m' to list available commands and usages".format(HOST, PORT)
+LIST = "'LIST' usage: LIST <channel> \n\tEx: 'LIST' lists all channels \n"
+PRIVMSG = "'PRIVMSG' usage: PRIVMSG <receiver> <text to be sent> \n\tEx: 'PRIVMSG Wiz :Hello!'\n"
+NAMES = "'NAMES' usage: NAMES <channel> \n\tEx: 'NAMES' lists all channels and users\n"
+QUIT = "'QUIT' usage: QUIT [<optional message>] \n\tEx: 'QUIT :Gone fishing' exits client and relays message"
+PART = "'PART' usage: PART <channel>{,<channel>} \n\tEx: 'PART #music' user leaves #music chat room"
+JOIN = "'JOIN' usage: JOIN <channel>{,<channel>} \n\tEx:'JOIN #coolguys,#lesscoolguys' user joins both channels"
